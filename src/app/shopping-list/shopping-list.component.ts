@@ -12,4 +12,12 @@ export class ShoppingListComponent {
     new Ingredient('Gochujang', 1),
     new Ingredient('Sweet Potato', 2),
   ];
+  constructor() { }
+
+  ngOnInit() {
+    
+  }
+  onIngredientAdded(ingredient: Ingredient) {
+    this.ingredients.push(ingredient);
+  }
 }
